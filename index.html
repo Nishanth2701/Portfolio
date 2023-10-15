@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/346d208d89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <Nav>
+            <h1 class = "name"><span class="S">N</span>ishanth <span class="S">U</span>rs</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </Nav>
+        <div class="header-text">
+            <p>Student</p>
+            <h1>Hi, I'm <span style="color: #ff004f;">Nishanth</span></h1>
+        </div>
+    </div>
+</div>
+<!-----------about----------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/images/mypi.png" width="300px"alt="my_image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h2>
+                <p>My journey isn't just about coding; it's about artistic expression. Each project I embark upon becomes a canvas for me to blend technology and creativity into a harmonious symphony. From dynamic web applications to interactive e-commerce platforms, I infuse every line of code with a touch of ingenuity.</p>
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                </div>  
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Machine Learning</span><br>Building Machine Learning Models</li>
+                        <li><span>Python</span><br>Python Development</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Present</span><br>Web Development Intern at Varcons Technologies</li>
+                        <li><span>2023 - Present</span><br>Machine Learning Intern at Tech-A-Intern</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Don Bosco Institute of Technology<br/>BE in Artificial Intelligence and Machine Learning</li>
+                        <li><span>2018 - 2020</span><br>RNS Pre University College</li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img/images/avengers.jpg" alt="">
+                <div class="layer">
+                    <h3>Movie Recommendation ML model</h3>
+                    <p>A  Movie Recommendation System uses machine learning in Python
+                        to suggest movies based on user preferences. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/dia.jpg" alt="">
+                <div class="layer">
+                    <h3>Diabetes Prediction Web App</h3>
+                    <p>A  Movie Recommendation System uses machine learning in Python
+                        to suggest movies based on user preferences. eveloping a machine learning model to predict diabetes risk based on patient health data.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/fraud.jpg" alt="">
+                <div class="layer">
+                    <h3>Credit Card Fraud Detection ML Model</h3>
+                    <p>A  Movie Recommendation System uses machine learning in Python
+                        to suggest movies based on user preferences. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------contact------------>
+<div id="contact"></div>
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> nishanthurs83@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7019698499</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/sharonkukku?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/sharon.sajan.125/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/SharonSaja11044?t=MvJP6WqAKFMWKxy4JYiAsQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="www.linkedin.com/in/sharon-sajan-283a43272"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./personal-portfolio-img/images/my_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i> Nishanth</p>
+    </div>
+</div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFFSytvQdud0yJN1L2DHqVp_2YJyxisYB-tE-pNwR2f6dyHnHUT9CF_Ure1Xtwl3jM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+</body>
+</html>
